@@ -15,7 +15,7 @@ private:
 };
 
 void FriendList::RefreshList() {
-
+	//TODO: Fetch data from server and reload UI
 }
 
 bool FriendList::AddFriend(int id) {
@@ -24,18 +24,18 @@ bool FriendList::AddFriend(int id) {
 	return true;
 }
 
-void 	  FriendList::DeleteFriend(int id) {
+void FriendList::DeleteFriend(int id) {
 	friendList.remove(id);
 }
 
 
 void FriendList::GetFriendList(string id) {
-
+	//TODO: Bring up UI for friendlist
 
 }
 FriendList::FriendList()
 {
-
+	RefreshList();
 }
 
 FriendList::~FriendList()

@@ -11,6 +11,7 @@ public:
 #pragma region Variable
 	list<User> groupMembers;
 	list<Message> messageList;
+	int conversationID;
 #pragma endregion
 
 #pragma region Constructor , Destructor

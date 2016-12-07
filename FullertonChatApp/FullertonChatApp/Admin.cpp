@@ -33,10 +33,7 @@ void Admin::BanUser(User scumbag, Server myServer, MYSQL *connection)
 
 void ClearChat(Conversation myConvo, Server myServer)
 {
-	while(myConvo.messageList.size() > 1)
-	{
-		myConvo.deleteMessage(0);
-	}
+	myConvo.messageList.clear();
 	//TODO: Clear convo on server
 }
 
@@ -47,5 +44,4 @@ void MonitorChatlog(Conversation myConvo)
 		const char* str = iterator->text.c_str();
 		printf(str);
 	}
-	//TODO: Clear convo on server
 }
