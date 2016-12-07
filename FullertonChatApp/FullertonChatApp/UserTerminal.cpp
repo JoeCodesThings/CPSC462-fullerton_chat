@@ -7,41 +7,27 @@ class UserTerminal
 {
 public:
 	User currentUser;
-	UserTerminal();
-	~UserTerminal();
-	bool Login();
-	void Logout();
+	UserTerminal() {
+		currentUser = User();
+	}
+	~UserTerminal() {
+		
+		
+	}
+	bool Login() {			
+		return true;
+	}
+	void Logout() {
+	
+	}
 	bool Register() {
-
-	};
-	void GetFriendList();
+	}
+	void GetFriendList() {
+	}
 	
 
 private:
 
 };
 
-bool UserTerminal::Login() {
-	return true;
-}
 
-void UserTerminal::Logout() {
-
-}
-
-//bool UserTerminal::Register() {
-//	return true;
-//}
-
-void UserTerminal::GetFriendList() {
-
-}
-
-UserTerminal::UserTerminal()
-{
-	currentUser = User();
-}
-
-UserTerminal::~UserTerminal()
-{
-}
