@@ -31,13 +31,13 @@ void Admin::BanUser(User scumbag, Server myServer, MYSQL *connection)
 	}
 }
 
-void ClearChat(Conversation myConvo, Server myServer)
+void Admin::ClearChat(Conversation myConvo, Server myServer)
 {
 	myConvo.messageList.clear();
 	//TODO: Clear convo on server
 }
 
-void MonitorChatlog(Conversation myConvo)
+void Admin::MonitorChatlog(Conversation myConvo)
 {
 	for (list<Message>::const_iterator iterator = myConvo.messageList.cbegin(), end = myConvo.messageList.cend(); iterator != end; ++iterator)
 	{
