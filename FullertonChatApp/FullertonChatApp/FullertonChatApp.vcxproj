@@ -170,6 +170,8 @@
     </ClCompile>
     <ClCompile Include="Conversation.cpp" />
     <ClCompile Include="Conversationmanager.cpp" />
+    <ClCompile Include="EmojiObject.cpp" />
+    <ClCompile Include="FileObject.cpp" />
     <ClCompile Include="FriendList.cpp" />
     <ClCompile Include="MainPage.xaml.cpp">
       <DependentUpon>MainPage.xaml</DependentUpon>
